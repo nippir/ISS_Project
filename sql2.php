@@ -20,14 +20,7 @@
 	</div>
 
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$db = "1ccb8097d0e9ce9f154608be60224c7c";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password,$db);
-
+	include conn.php:
 	// Check connection
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
