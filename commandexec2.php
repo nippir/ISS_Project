@@ -23,7 +23,7 @@
       htmlspecialchars($target =$_GET["typeBox"], ENT_QUOTES, 'UTF-8');
       $substitutions = array('&&' => '',';'  => '','/' => '','\\' => '' );
       $target = str_replace(array_keys($substitutions),$substitutions,$target);
-      echo shell_exec($target);
+      echo htmlspecialchars($target);
       if($_GET["typeBox"] == "Trochilidae")
         echo "Welldone! You did great job.";
     }
